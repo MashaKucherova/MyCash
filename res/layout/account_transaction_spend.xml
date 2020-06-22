@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Расходы"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="41dp"
+            android:layout_height="wrap_content"
+            android:text=" за"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="24sp" />
+
+        <Spinner
+            android:id="@+id/month"
+            style="@android:style/Widget.Holo.Light.Spinner"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:animationCache="false"
+            android:clickable="false"
+            android:spinnerMode="dropdown" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="10dp"
+        android:text="10000000"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="26sp" />
+
+    <ListView
+        android:id="@+id/listSpend"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:drawSelectorOnTop="false"
+        android:listSelector="@drawable/mybg2"
+        android:layout_marginTop="7dp" />
+
+</LinearLayout>

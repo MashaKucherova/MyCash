@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:background="#ADFBF4"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="237dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Баланс:"
+                tools:text=" Баланс:" />
+
+            <TextView
+                android:id="@+id/balance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/filtr"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="76dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/mybg1"
+            android:drawableLeft="@drawable/icons7"
+            android:onClick="filtr"
+            android:paddingStart="15dp"
+            android:textSize="10sp" />
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="76dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/mybg1"
+            android:drawableLeft="@drawable/icons8"
+            android:onClick="add"
+            android:paddingStart="15dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/userFilter"
+        style="@android:style/Widget.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#257E73"
+        android:drawableStart="?android:attr/actionModeWebSearchDrawable"
+        android:hint="Поиск операций по любым параметрам"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <ListView
+        android:id="@+id/list"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#4C8A85"
+
+        android:drawSelectorOnTop="false"
+        android:listSelector="@drawable/mybg2"
+
+        android:saveEnabled="false"
+        android:scrollbarSize="4dp"
+        android:scrollbarThumbVertical="@color/colorAccent" />
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="счета"
+        android:id="@+id/bottomNavigationAccountMenuId"
+        android:icon="@drawable/account"
+
+
+        />
+
+    <item android:title="операции"
+        android:id="@+id/bottomNavigationTransactionMenuId"
+        android:icon="@drawable/transaction"
+        />
+
+    <item android:title="отчет"
+        android:id="@+id/bottomNavigationPlanMenuId"
+        android:icon="@drawable/report"
+        />
+
+
+</menu>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#ADFBF4</color>
+  <color name="colorPrimaryDark">#5FC8BF</color>
+  <color name="colorAccent">#57BFB6</color>
+  <color name="colorSpinner">#4BEAECEC</color>
+  <color name="colorSpinnerItem">#6DBDE8E4</color>
+  <color name="color">#00FFFFFF</color>
+  <color name="color1">#8D018786</color>
+  <color name="color2">#1EBDE8E4</color>
+  <color name="color3">#34018786</color>
+  <color name="color55">#9C9912</color>
+
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="AccountNames">
+        <item>Наличные</item>
+        <item>Сбербанк</item>
+    </string-array>
+
+    <string-array name="TypeNames">
+        <item>Расходы</item>
+        <item>Доходы</item>
+
+    </string-array>
+
+    <string-array name="CategoryNames">
+        <item>Покупки</item>
+        <item>Платежи</item>
+        <item>Переводы</item>
+        <item>Зачисления</item>
+        <item>Без категории</item>
+
+    </string-array>
+
+</resources>

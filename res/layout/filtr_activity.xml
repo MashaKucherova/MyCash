@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Дата" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/dateStart"
+                style="@android:style/Widget.Holo.Light.AutoCompleteTextView"
+                android:layout_width="169dp"
+                android:layout_height="43dp"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="c"
+                android:onClick="setDateStart"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="         —"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/dateFinish"
+                style="@android:style/Widget.Holo.Light.AutoCompleteTextView"
+                android:layout_width="169dp"
+                android:layout_height="43dp"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="по"
+                android:onClick="setDateFinish"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Тип операции" />
+
+        <LinearLayout
+            android:id="@+id/LLtype"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/typeSumm"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:onClick="onTypeClicked"
+                android:tag="Все"
+                android:text="Все" />
+
+            <CheckBox
+                android:id="@+id/typeSpend"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:onClick="onTypeClicked"
+                android:tag="Расходы"
+                android:text="Расходы" />
+
+            <CheckBox
+                android:id="@+id/typeIncome"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:onClick="onTypeClicked"
+                android:tag="Доходы"
+                android:text="Доходы" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Категории" />
+
+        <TableLayout
+            android:id="@+id/TLcategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/categorySumm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:onClick="onCategoryClicked"
+                    android:text="Все" />
+
+                <CheckBox
+                    android:id="@+id/categoryBuy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCategoryClicked"
+                    android:text="Покупки" />
+
+                <CheckBox
+                    android:id="@+id/categoryPay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCategoryClicked"
+                    android:text="Платежи" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/categoryTrans"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCategoryClicked"
+                    android:text="Переводы" />
+
+                <CheckBox
+                    android:id="@+id/categoryIncome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCategoryClicked"
+                    android:text="Зачисления" />
+
+                <CheckBox
+                    android:id="@+id/categoryNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCategoryClicked"
+                    android:text="Без категории" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Карты и счета" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="102dp">
+
+            <LinearLayout
+                android:id="@+id/LLaccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/accountSumm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Все" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ApplyButton"
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/mybg1"
+            android:onClick="Apply"
+            android:text="Применить"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#D8000908" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listFiltr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#4C8A85"
+
+        android:drawSelectorOnTop="false"
+        android:listSelector="@drawable/mybg2"
+
+        android:saveEnabled="false"
+        android:scrollbarSize="4dp"
+        android:scrollbarThumbVertical="@color/colorAccent" />
+</LinearLayout>

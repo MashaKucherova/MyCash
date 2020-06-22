@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Spinner
+        android:id="@+id/accountSpinner"
+        style="@android:style/Widget.Holo.Light.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+
+        android:dropDownWidth="wrap_content"
+        android:entries="@array/AccountNames"
+        android:spinnerMode="dropdown"
+       />
+
+    <Spinner
+        android:id="@+id/typeSpinner"
+        style="@android:style/Widget.Holo.Light.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:entries="@array/TypeNames" />
+
+    <Spinner
+        android:id="@+id/categorySpinner"
+        style="@android:style/Widget.Holo.Light.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:entries="@array/CategoryNames" />
+
+    <EditText
+        android:id="@+id/designation"
+        style="@android:style/Widget.Holo.Light.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите назначение операции" />
+
+    <EditText
+        android:id="@+id/sum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="false"
+        android:hint="Введите сумму"
+        android:inputType="numberDecimal"
+        android:textColor="@color/design_default_color_on_secondary" />
+
+    <EditText
+        android:id="@+id/date"
+        style="@android:style/Widget.Holo.Light.AutoCompleteTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="43dp"
+        android:clickable="true"
+        android:hint="Укажите дату"
+        android:onClick="setDate"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textSize="18sp"
+        android:focusable="false"
+        android:editable="false"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/mybg1"
+            android:onClick="save"
+            android:text="Сохранить"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#D8000908" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:background="@drawable/mybg1"
+            android:onClick="delete"
+            android:text="Удалить"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#D8000908" />
+    </LinearLayout>
+
+
+</LinearLayout>
